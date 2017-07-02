@@ -39,6 +39,12 @@ module.exports = React.createClass({
           {css}
           <style>
             {`
+              .showMobile {
+                display: none;
+              }
+              .hideMobile {
+                display: block;
+              }
               @media (max-width: 480px) {
                 .showMobile {
                   display: block;

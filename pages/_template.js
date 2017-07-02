@@ -4,7 +4,7 @@ import { Container } from 'react-responsive-grid';
 import { prefixLink } from 'gatsby-helpers';
 import { rhythm } from 'utils/typography';
 import { config } from 'config';
-import Nav from '../components/Nav';
+import Header from '../components/Header';
 
 const Template = ({ location, children }) => (
   <Container
@@ -13,7 +13,7 @@ const Template = ({ location, children }) => (
       padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
     }}
   >
-    <Nav />
+    <Header />
     <h3
       style={{
         fontFamily: 'Montserrat, sans-serif',
