@@ -9,8 +9,8 @@ export default () => (
   <div
     style={{
       display: 'flex',
-      'justify-content': 'space-between',
-      'align-items': 'center',
+      justifyContent: 'space-between',
+      alignItems: 'center',
       marginBottom: rhythm(1.5),
       marginTop: 0,
     }}
@@ -39,7 +39,7 @@ export default () => (
     >
       <ul
         style={{
-          'text-align': 'right',
+          textAlign: 'right',
           marginBottom: 0
         }}
       >
