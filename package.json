@@ -1,5 +1,5 @@
 {
-  "name": "js-bites",
+  "name": "js-bites-blog",
   "description": "A Bite Sized Javascript Blog",
   "version": "1.0.0",
   "author": "Jason Stinson <jsfeb26@gmail.com>",
@@ -20,7 +20,7 @@
   "devDependencies": {
     "gh-pages": "^0.12.0"
   },
-  "homepage": "https://github.com/jsfeb26/jsfeb26.github.io#readme",
+  "homepage": "https://github.com/jsfeb26/js-bites-blog#readme",
   "keywords": [
     "gatsby"
   ],
@@ -28,7 +28,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jsfeb26/jsfeb26.github.io.git"
+    "url": "git@github.com:jsfeb26/js-bites-blog.git"
   },
   "scripts": {
     "dev": "gatsby develop",
@@ -36,6 +36,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy": "gatsby build --prefix-links && gh-pages -d public"
   }
 }

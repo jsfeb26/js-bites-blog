@@ -1,2 +1,3 @@
 blogName = "JS Bites"
 authorName = "Jason Stinson"
+linkPrefix = "/js-bites-blog"
