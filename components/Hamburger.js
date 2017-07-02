@@ -58,7 +58,7 @@ export default class Hamburger extends Component {
           burgerButtonClassName={ "showMobile" }
           menuClassName={ "showMobile" }
           overlayClassName={ "showMobile" }
-          styles={styles}
+          style={styles}
         >
           <Link
             style={{

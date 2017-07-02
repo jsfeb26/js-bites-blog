@@ -5,7 +5,7 @@
   "author": "Jason Stinson <jsfeb26@gmail.com>",
   "dependencies": {
     "gatsby": "^0.12.41",
-    "lodash": "^4.17.2",
+    "lodash.get": "^4.4.2",
     "moment": "^2.18.1",
     "react-addons-shallow-compare": "^15.5.2",
     "react-burger-menu": "^2.1.2",
