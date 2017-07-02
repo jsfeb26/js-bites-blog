@@ -1,5 +1,5 @@
 {
-  "name": "js bites",
+  "name": "js-bites",
   "description": "A Bite Sized Javascript Blog",
   "version": "1.0.0",
   "author": "Jason Stinson <jsfeb26@gmail.com>",
@@ -36,6 +36,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public"
   }
 }
