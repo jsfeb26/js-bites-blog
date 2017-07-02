@@ -1,3 +1,4 @@
 blogName = "JS Bites"
 authorName = "Jason Stinson"
-linkPrefix = "/js-bites-blog"
+# don't need linkPrefix if you are using custom domain
+# linkPrefix = "/js-bites-blog"
