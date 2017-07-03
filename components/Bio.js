@@ -50,16 +50,16 @@ export default () => (
   <BioContainer>
     <ProfilePic src={profilePic} alt={`author ${config.authorName}`} />
     <BioParagraph>
-      Written by <strong>{config.authorName}</strong> who lives and works in New York building useful things. <a href="https://twitter.com/jsfeb26">You should follow him on Twitter</a>
+      Written by <strong>{config.authorName}</strong> who lives and works in NYC
     </BioParagraph>
     <SocialContainer>
-      <SocialLinks href="https://www.linkedin.com/in/jsfeb26/">
+      <SocialLinks target="_blank" href="https://www.linkedin.com/in/jsfeb26/">
         <SocialImages alt="Linkedin" src={linkedin} />
       </SocialLinks>
-      <SocialLinks href="https://twitter.com/jsfeb26">
+      <SocialLinks target="_blank" href="https://twitter.com/jsfeb26">
         <SocialImages alt="Twitter" src={twitter} />
       </SocialLinks>
-      <SocialLinks href="github.com/jsfeb26">
+      <SocialLinks target="_blank" href="https://github.com/jsfeb26">
         <SocialImages alt="Github" src={github} />
       </SocialLinks>
     </SocialContainer>

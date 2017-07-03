@@ -6,7 +6,28 @@ import { rhythm } from 'utils/typography';
 import Helmet from "react-helmet";
 import { config } from 'config';
 import include from 'underscore.string/include';
-import Bio from 'components/Bio';
+import styled from 'styled-components';
+import Bio from '../components/Bio';
+
+const ListContainer = styled.ul`
+  list-style-type: none;
+  margin-left: 0 !important;
+  li {
+    margin-bottom: 0;
+  }
+  li + li {
+    margin-top: 9px;
+  }
+`;
+
+const PostLink = styled(Link)`
+  box-shadow: none;
+`;
+
+const Title = styled.h2`
+  margin-top: 36px;
+  margin-bottom: 18px;
+`;
 
 const BlogIndex = (props) => {
   const sortedPages = props.route.pages.sort((a, b) => {
@@ -37,21 +58,16 @@ const BlogIndex = (props) => {
         ]}
       />
       <Bio />
-      <h2>Latest Posts</h2>
-      <ul style={{ listStyleType: 'none' }}>
+      <Title>Latest Posts</Title>
+      <ListContainer>
         {visiblePages.map((page) => (
-            <li
-              key={page.path}
-              style={{
-                  marginBottom: rhythm(1/4),
-              }}
-            >
-              <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
+            <li key={page.path}>
+              <PostLink to={prefixLink(page.path)}>
                   {get(page, 'data.title', page.path)}
-              </Link>
+              </PostLink>
             </li>
         ))}
-      </ul>
+      </ListContainer>
     </div>
   );
 };
